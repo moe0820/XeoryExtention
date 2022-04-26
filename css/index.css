@@ -1,0 +1,143 @@
+body {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+}
+/* ヘッダー */
+#header {
+  position: relative;
+  height: 92px;
+  background-color: #48b39d;
+}
+.title {
+  height: 92px;
+  line-height: 92px;
+  position: absolute;
+  left: 8%;
+}
+.title a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+.title a:hover {
+  text-decoration: underline;
+}
+.gnav {
+  position: absolute;
+  right: 8%;
+}
+.gnav-item {
+  float: left;
+  height: 92px;
+  line-height: 92px;
+}
+.gnav-item a {
+  display: block;
+  margin: 0 4px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.gnav-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+/* トップ画面 */
+.main-area {
+  position: relative;
+  background-color: #42AE99;
+  height: 789px;
+}
+.main-text {
+  width: 100%;
+  position: absolute;
+  top: 28%;
+}
+.site-title {
+  text-align: center;
+  padding-bottom: 24px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 70px;
+}
+.site-descripsiton {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 42%;
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+}
+/* 記事ーー共通 */
+.entry {
+  border-bottom: solid 1px #d4d4d4;
+  padding-bottom: 60px;
+}
+.entry-flex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  justify-content: center;
+}
+.entry-item {
+  position: relative;
+  width: 15%;
+}
+.entry-item a{
+  text-decoration: none;
+}
+.entry-item a:hover {
+  text-decoration: underline #42AE99;
+}
+.entry-item img {
+  max-width: 100%;
+}
+.entry-title {
+  padding: 30px;
+  margin: 50px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #241913;
+  border-top: solid 1px #d4d4d4;
+  border-bottom: solid 1px #d4d4d4;
+}
+.entry-item-category {
+  display: inline-block;
+	padding: 10px 20px;
+  margin: 12px 0 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #48B39D;
+}
+.entry-item-title {
+  font-size: 16px;
+  color: #241913;
+}
+
+.entry-item-num{
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 16px 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.entry-item-num span{
+  font-size: 16px;
+}
+/* 背景色の個別設定 */
+.num-1 {
+  background-color: #D6B038;
+}
+.num-2 {
+  background-color: #adadad;
+}
+.num-3 {
+  background-color: #c47c42;
+}
+/* 共通 */
+.num-45 {
+  background-color: #4b4b4b;
+}
