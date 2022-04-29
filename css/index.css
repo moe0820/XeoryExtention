@@ -39,7 +39,7 @@ body {
   text-decoration: none;
 }
 .gnav-item a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: 0.5s;
 }
 /* トップ画面 */
@@ -104,7 +104,7 @@ body {
 }
 .entry-item-category {
   display: inline-block;
-	padding: 10px 20px;
+	padding: 12px 24px;
   margin: 12px 0 20px;
   font-size: 12px;
   color: #fff;
@@ -115,7 +115,7 @@ body {
   color: #241913;
 }
 
-.entry-item-num{
+.entry-item-num {
   position: absolute;
   top: 0;
   opacity: 0.7;
@@ -137,7 +137,37 @@ body {
 .num-3 {
   background-color: #c47c42;
 }
-/* 共通 */
 .num-45 {
   background-color: #4b4b4b;
+}
+/* 最近の記事 */
+.entry-item-date {
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+  display: inline-block;
+  padding: 10px 2px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #4b4b4b;
+  text-align: center
+}
+.entry-item-date span{
+  font-size: 14px;
+}
+br {
+display: block;
+content: "";
+margin: 4px 0;
+}
+/* 特徴 */
+.feature-title {
+  padding: 20px 0;
+  background-color: #3B4552;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+.feautre-subtitle {
+  font-size: 13px;
 }
