@@ -1,5 +1,7 @@
 body {
   font-family: "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+  background-color: #fbfbfb;
+  /* background-color: burlywood; */
 }
 /* ヘッダー */
 #header {
@@ -45,7 +47,7 @@ body {
 /* トップ画面 */
 .main-area {
   position: relative;
-  background-color: #42AE99;
+  background-color: #42a994;
   height: 789px;
 }
 .main-text {
@@ -71,8 +73,10 @@ body {
 }
 /* 記事ーー共通 */
 .entry {
+  background-color: #fff;
   border-bottom: solid 1px #d4d4d4;
   padding-bottom: 60px;
+  margin: 50px 0;
 }
 .entry-flex {
   display: flex;
@@ -84,18 +88,18 @@ body {
   position: relative;
   width: 15%;
 }
-.entry-item a{
+.entry-item a {
   text-decoration: none;
 }
 .entry-item a:hover {
-  text-decoration: underline #42AE99;
+  text-decoration: underline #47b39d;
 }
 .entry-item img {
   max-width: 100%;
 }
 .entry-title {
   padding: 30px;
-  margin: 50px 0;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 24px;
   color: #241913;
@@ -104,11 +108,11 @@ body {
 }
 .entry-item-category {
   display: inline-block;
-	padding: 12px 24px;
+  padding: 12px 24px;
   margin: 12px 0 20px;
   font-size: 12px;
   color: #fff;
-  background-color: #48B39D;
+  background-color: #48b39d;
 }
 .entry-item-title {
   font-size: 16px;
@@ -124,12 +128,12 @@ body {
   font-size: 12px;
   color: #fff;
 }
-.entry-item-num span{
+.entry-item-num span {
   font-size: 16px;
 }
 /* 背景色の個別設定 */
 .num-1 {
-  background-color: #D6B038;
+  background-color: #d6b038;
 }
 .num-2 {
   background-color: #adadad;
@@ -150,24 +154,203 @@ body {
   font-size: 12px;
   color: #fff;
   background-color: #4b4b4b;
-  text-align: center
+  text-align: center;
 }
-.entry-item-date span{
+.entry-item-date span {
   font-size: 14px;
 }
 br {
-display: block;
-content: "";
-margin: 4px 0;
+  display: block;
+  content: "";
+  margin: 4px 0;
 }
 /* 特徴 */
-.feature-title {
-  padding: 20px 0;
-  background-color: #3B4552;
+.contents-item-title {
+  padding: 24px 0 30px;
+  background-color: #3b4552;
+  position: relative;
   color: #fff;
   font-size: 28px;
   text-align: center;
 }
-.feautre-subtitle {
+.contents-item-logo {
+  display: block;
+  padding-bottom: 16px;
+}
+.contents-item-subtitle {
+  display: block;
   font-size: 13px;
+  padding-top: 12px;
+}
+/* 三角 */
+.contents-item-title ::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -80px;
+  width: 0;
+  height: 0;
+  border: 60px solid;
+  border-color: transparent;
+  border-top: 20px solid #3b4552;
+}
+.feauture-1 {
+  background-color: #fff;
+  background-image: url(https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right top;
+  border-bottom: solid 1px #d4d4d4;
+}
+.feauture-item-title {
+  padding-left: 8%;
+  font-size: 36px;
+  color: #47b39d;
+}
+.feauture-item-num {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: #47b39d;
+  padding: 46px 12px 12px;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+.feauture-item-subtitle {
+  display: block;
+  padding-top: 20px;
+  font-size: 13px;
+}
+.feature-text {
+  padding: 40px 0 40px 8%;
+  width: 53%;
+  font-size: 16px;
+  line-height: 26px;
+  color: #241913;
+}
+.feauture-item-button p {
+  margin-left: 8%;
+  padding: 14px 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 0 3px rgb(0 0 0 / 50%);
+  background-color: #ff6c01;
+  border-radius: 5px;
+}
+/* サービス紹介 */
+.contents-flex {
+  display: flex;
+  justify-content: center;
+}
+.servise {
+  flex-basis: 50%;
+  background-color: #fff;
+  border-right: solid 1px #d4d4d4;
+}
+.servise-title {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #47b39d;
+}
+.servise-subtitle {
+  padding: 24px 0;
+  display: block;
+  font-size: 13px;
+  color: #47b39d;
+}
+.servise-button {
+  padding: 20px 0;
+  margin-left: 32%;
+  margin-bottom: 100px;
+  width: 36%;
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0 0 3px rgb(0 0 0 / 50%);
+  background-color: #47b39d;
+  border-radius: 5px;
+}
+.servise-button p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+/* お問合せ */
+form {
+  background-color: #47b39d;
+  padding: 100px 0;
+  text-align: center;
+}
+dt {
+  font-size: 16px;
+  color: #fff;
+}
+input {
+  width: 40%;
+  height: 40px;
+  margin: 4px 0 24px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+textarea {
+  width: 40%;
+  height: 240px;
+  margin-top: 4px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+.submit {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1em;
+  background-color: #131d2a;
+  border: none;
+  border-radius: 4px;
+  width: 12%;
+  height: 48px;
+}
+/* フッター */
+.footer {
+  background-color: #021831;
+  color: #fff;
+}
+.site-name {
+  font-size: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #3b4552;
+}
+.footer-wrap {
+  padding: 50px 8%;
+}
+.footer-flex {
+  display: flex;
+  column-gap: 4%;
+}
+.footer-list {
+  flex-basis: 14%;
+  padding-top: 20px;
+}
+.footer-list-label {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.footer-list-value {
+  font-size: 14px;
+}
+.footer-list-value a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 32px;
+}
+/* コピーライト */
+.copyright {
+  background-color: #020a17;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 12px;
 }
