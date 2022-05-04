@@ -344,7 +344,7 @@ iframe {
 /* お問合せ */
 form {
   background-color: #47b39d;
-  padding: 100px 0;
+  padding: 100px 0 50px;
   text-align: center;
 }
 .form-label {
@@ -376,15 +376,20 @@ textarea {
   height: 48px;
 }
 /* ページTOPに戻るボタン */
-.sticky-content {
+.pagetop {
   position: sticky;
-  right: 0;
+  bottom: 20px;
+  right: 40px;
+  margin-top: -70px;
+  float: right;
 }
-/* .pagetop a {
+/* ボタンデザイン */
+.pagetop a {
   display: block;
   font-size: 0;
-  width: 60px;
-  height: 60px;
+  /* 大きさ→width,height,line-heightを統一 */
+  width: 50px;
+  height: 50px;
   text-align: center;
   background: #2525258e;
   border-radius: 50%;
@@ -393,13 +398,16 @@ textarea {
 .pagetop a i {
   font-size: 24px;
   color: #fff;
-  line-height: 60px;
-} */
+  line-height: 50px;
+}
+.pagetop-bg {
+  background-color: #47b39d;
+}
 /* フッター */
 .footer {
   background-color: #021831;
   color: #fff;
-  border-top: 10px solid #3B4552;
+  border-top: 10px solid #3b4552;
 }
 .site-name {
   font-size: 24px;
