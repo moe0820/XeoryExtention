@@ -206,7 +206,7 @@ br {
   background-color: #fff;
   border-bottom: solid 1px #d4d4d4;
 }
-.feauture img{
+.feauture img {
   width: 100%;
   height: 440px;
   object-fit: cover;
@@ -287,7 +287,7 @@ br {
   font-size: 13px;
   color: #47b39d;
 }
-.servise-button p{
+.servise-button p {
   padding: 20px 0;
   margin-left: 32%;
   margin-bottom: 100px;
@@ -317,17 +317,18 @@ iframe {
 .table {
   color: #241913;
   font-size: 16px;
-  width: 50%;
-  padding: 94px 80px 94px 60px;
+  width: 56%;
+  /* 全体に対しての余白 */
+  padding: 94px 0px 94px 120px;
   line-height: 70px;
 }
-.teble-label{
-  /* background-color: crimson; */
-  padding: 0 80px 0 40px;
+.teble-label {
+  padding-left: 32px;
+  margin-right: 32px;
+  width: 140px;
   float: left;
 }
 .teble-value {
-
   border-bottom: 1px solid #e5e5e5;
 }
 .table dt:first-of-type {
