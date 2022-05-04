@@ -165,6 +165,7 @@ br {
   margin: 4px 0;
 }
 /* 特徴 */
+/* 見出し */
 .contents-item-title {
   padding: 24px 0 30px;
   background-color: #3b4552;
@@ -197,16 +198,34 @@ br {
   border-color: transparent;
   border-top: 20px solid #3b4552;
 }
-.feauture-1 {
+/* コンテンツ */
+/* flex設定 */
+.feauture {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
-  background-image: url(https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: right top;
   border-bottom: solid 1px #d4d4d4;
 }
-.feauture-item-title {
+.feauture img{
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+.flex-right {
+  background-color: #fbfbfb;
+}
+.flex-right img {
+  order: 1;
+}
+.flex-right .feauture-item {
+  order: 2;
+}
+/* テキスト部分 */
+.feauture-item {
+  max-width: 60%;
   padding-left: 8%;
+}
+.feauture-item-title {
   font-size: 36px;
   color: #47b39d;
 }
@@ -225,15 +244,15 @@ br {
   font-size: 13px;
 }
 .feature-text {
-  padding: 40px 0 40px 8%;
-  width: 53%;
+  padding: 40px 0;
+  width: 84%;
   font-size: 16px;
   line-height: 26px;
   color: #241913;
 }
+/* ボタン */
 .feauture-item-button p {
-  margin-left: 8%;
-  padding: 14px 60px;
+  padding: 16px 60px;
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
@@ -241,6 +260,10 @@ br {
   text-shadow: 0 0 3px rgb(0 0 0 / 50%);
   background-color: #ff6c01;
   border-radius: 5px;
+}
+.feauture-item-button p:hover {
+  opacity: 0.7;
+  transition: 0.8s;
 }
 /* サービス紹介 */
 .contents-flex {
@@ -264,7 +287,7 @@ br {
   font-size: 13px;
   color: #47b39d;
 }
-.servise-button {
+.servise-button p{
   padding: 20px 0;
   margin-left: 32%;
   margin-bottom: 100px;
@@ -274,19 +297,53 @@ br {
   text-shadow: 0 0 3px rgb(0 0 0 / 50%);
   background-color: #47b39d;
   border-radius: 5px;
-}
-.servise-button p {
   text-align: center;
   font-size: 16px;
   color: #fff;
 }
+.servise-button p:hover {
+  opacity: 0.7;
+  transition: 0.8s;
+}
+/* 会社紹介 */
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+iframe {
+  max-width: 40%;
+}
+.table {
+  color: #241913;
+  font-size: 16px;
+  width: 50%;
+  padding: 94px 80px 94px 60px;
+  line-height: 70px;
+}
+.teble-label{
+  /* background-color: crimson; */
+  padding: 0 80px 0 40px;
+  float: left;
+}
+.teble-value {
+
+  border-bottom: 1px solid #e5e5e5;
+}
+.table dt:first-of-type {
+  border-top: 1.5px solid #42a994;
+}
+.table dd:first-of-type {
+  border-top: 1px solid #e5e5e5;
+}
+
 /* お問合せ */
 form {
   background-color: #47b39d;
   padding: 100px 0;
   text-align: center;
 }
-dt {
+.form-label {
   font-size: 16px;
   color: #fff;
 }
@@ -321,19 +378,19 @@ textarea {
 }
 .site-name {
   font-size: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #3b4552;
 }
 .footer-wrap {
   padding: 50px 8%;
 }
 .footer-flex {
+  padding-top: 40px;
   display: flex;
   column-gap: 4%;
 }
 .footer-list {
   flex-basis: 14%;
-  padding-top: 20px;
 }
 .footer-list-label {
   font-size: 16px;
@@ -345,7 +402,11 @@ textarea {
 .footer-list-value a {
   color: #fff;
   text-decoration: none;
-  line-height: 32px;
+  line-height: 40px;
+}
+.footer-list-value a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
 }
 /* コピーライト */
 .copyright {
