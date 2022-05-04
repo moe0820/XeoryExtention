@@ -372,10 +372,32 @@ textarea {
   width: 12%;
   height: 48px;
 }
+/* ページTOPに戻るボタン */
+.pagetop {
+  bottom: 500px;
+  right: 20px;
+  position: fixed;
+}
+.pagetop a {
+  display: block;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: #2525258e;
+  border-radius: 50%;
+  line-height: 50px;
+}
+.pagetop a i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 60px;
+}
 /* フッター */
 .footer {
   background-color: #021831;
   color: #fff;
+  border-top: 10px solid #3B4552;
 }
 .site-name {
   font-size: 24px;
