@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
   background-color: #fbfbfb;
@@ -373,12 +376,11 @@ textarea {
   height: 48px;
 }
 /* ページTOPに戻るボタン */
-.pagetop {
-  bottom: 500px;
-  right: 20px;
-  position: fixed;
+.sticky-content {
+  position: sticky;
+  right: 0;
 }
-.pagetop a {
+/* .pagetop a {
   display: block;
   font-size: 0;
   width: 60px;
@@ -392,7 +394,7 @@ textarea {
   font-size: 24px;
   color: #fff;
   line-height: 60px;
-}
+} */
 /* フッター */
 .footer {
   background-color: #021831;
