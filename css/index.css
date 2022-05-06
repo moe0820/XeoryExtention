@@ -403,6 +403,10 @@ textarea {
 .pagetop-bg {
   background-color: #47b39d;
 }
+.pagetop.display {
+  opacity: 0;
+  transition: 0.2s;
+}
 /* フッター */
 .footer {
   background-color: #021831;
