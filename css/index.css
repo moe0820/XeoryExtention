@@ -53,13 +53,9 @@ body {
   background-color: #42a994;
   height: 789px;
 }
-.main-text {
-  width: 100%;
-  position: absolute;
-  top: 28%;
-}
 .site-title {
   text-align: center;
+  padding-top: 200px;
   padding-bottom: 24px;
   color: #fff;
   font-size: 48px;
@@ -81,7 +77,7 @@ body {
   padding-bottom: 60px;
   margin: 50px 0;
 }
-.entry-flex {
+.entries {
   display: flex;
   flex-wrap: wrap;
   column-gap: 2%;
@@ -214,13 +210,13 @@ br {
   height: 440px;
   object-fit: cover;
 }
-.flex-right {
+.contents-right {
   background-color: #fbfbfb;
 }
-.flex-right img {
+.contents-right img {
   order: 1;
 }
-.flex-right .feauture-item {
+.contents-right .feauture-item {
   order: 2;
 }
 /* テキスト部分 */
@@ -269,7 +265,7 @@ br {
   transition: 0.8s;
 }
 /* サービス紹介 */
-.contents-flex {
+.contents-wrap {
   display: flex;
   justify-content: center;
 }
@@ -400,9 +396,6 @@ textarea {
   color: #fff;
   line-height: 50px;
 }
-.pagetop-bg {
-  background-color: #47b39d;
-}
 .pagetop.display {
   opacity: 0;
   transition: 0.2s;
@@ -421,7 +414,7 @@ textarea {
 .footer-wrap {
   padding: 50px 8%;
 }
-.footer-flex {
+.footer-list-container {
   padding-top: 40px;
   display: flex;
   column-gap: 4%;
