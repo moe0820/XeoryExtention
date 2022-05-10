@@ -78,6 +78,8 @@ body {
   margin: 50px 0;
 }
 .entries {
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2%;
@@ -202,7 +204,8 @@ br {
 .feauture {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
   border-bottom: solid 1px #d4d4d4;
 }
 .feauture img {
@@ -309,6 +312,8 @@ br {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 iframe {
   max-width: 40%;
