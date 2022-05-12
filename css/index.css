@@ -377,7 +377,7 @@ textarea {
   background-color: #131d2a;
   border: none;
   border-radius: 4px;
-  width: 12%;
+  width: 180px;
   height: 48px;
 }
 /* ページTOPに戻るボタン */
@@ -456,18 +456,50 @@ textarea {
 }
 
 /* タブレット */
-
 @media screen and (max-width: 1024px) {
-  /* ハンバーガーメニュー */
-  .gnav {
+  /* デフォルトのbuttonスタイルをリセット */
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+  }
+  /* ------------------ */
+  /* humberger-menu */
+  /* ------------------ */
+  /* 以下、ハンバーガーボタン */
+  .gnav-item {
     display: none;
+  }
+  .burger-btn {
+    background-color: #3B4552;
+    display: block;
+    width: 116px;
+    height: 92px;
+    position: absolute;
+    right: 24px;
+    z-index: 3;
+    border: none;
+  }
+  .fa-bars {
+    color: #fff;
+    font-size: 40px;
   }
   /* トップ画面 */
   .site-title {
     font-size: 24px;
   }
   .site-descripsiton {
-    width: 60%;
+    width: 80%;
   }
   .title {
     position: absolute;
@@ -556,5 +588,58 @@ textarea {
   /* フッター */
   .footer-list {
     flex-basis: auto;
+  }
+}
+/* SP */
+@media screen and (max-width: 599px) {
+  /* 記事 */
+  .entries {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+  }
+  .entry-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* 特徴 */
+  .feauture-item {
+    margin: 0 12px;
+  }
+  .feauture-item-button p {
+    width: 100%;
+  }
+  /* 会社案内 */
+  .table {
+    line-height: 30px;
+  }
+  .teble-label {
+    /* background-color: beige; */
+    padding-left: 10px;
+    margin-right: 0px;
+    width: auto;
+    float: none;
+    font-weight: 600;
+  }
+  .teble-value {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 10px;
+    padding-bottom: 8px;
+  }
+  .table dt:first-of-type {
+    border-top: 2px solid #42a994;
+    padding-top: 20px;
+  }
+  .table dd:first-of-type {
+    border-top: none;
+  }
+  /* お問合せ */
+  input , textarea {
+    width: 96%;
+  }
+  /* フッター */
+  .footer-list-container {
+    display: flex;
+    flex-direction: column;
   }
 }

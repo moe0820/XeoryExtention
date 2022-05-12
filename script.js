@@ -1,4 +1,3 @@
-
 window.addEventListener("scroll", function () {
   // スクロールしたピクセル数を取得
   let scroll = document.documentElement.scrollTop;
