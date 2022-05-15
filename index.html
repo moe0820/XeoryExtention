@@ -14,26 +14,27 @@
 <body>
   <header id="header">
     <h1 class="title"><a href="#">XeoryExtension</h1></a>
-
+    <!-- PC用メニュー -->
     <nav class="gnav">
       <ul>
         <li class="gnav-item"><a href="#">記事ページサンプル</a></li>
         <li class="gnav-item"><a href="#">Extensionをダウンロード</a></li>
       </ul>
     </nav>
-    <!-- バーガーメニュー -->
-    <div class="nav-wrapper">
-      <nav class="burger-nav">
-        <ul>
-          <li class="gnav-item"><a href="#">記事ページサンプル</a></li>
-          <li class="gnav-item"><a href="#">Extensionをダウンロード</a></li>
-        </ul>
-      </nav>
-    </div>
     <button class="burger-btn">
       <i class="fa-solid fa-bars"></i>
     </button>
   </header>
+  <!-- SP用メニュー -->
+  <div class="drawer">
+    <h3 class="burger-nav-title">ブログコンテンツ</h3>
+    <nav class="burger-nav">
+      <ul>
+        <li class="burger-nav-item"><i class="fa-solid fa-angle-right"></i><a href="#"> 記事ページサンプル</a></li>
+        <li class="burger-nav-item"><i class="fa-solid fa-angle-right"></i><a href="#"> Extensionをダウンロード</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main id="main">
     <article id="main-contents">

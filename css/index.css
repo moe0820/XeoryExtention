@@ -457,42 +457,57 @@ textarea {
 
 /* タブレット */
 @media screen and (max-width: 1024px) {
-  /* デフォルトのbuttonスタイルをリセット */
-  button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    margin: 0;
-    outline: none;
-    padding: 0;
-    vertical-align: middle;
-  }
-  /* ------------------ */
-  /* humberger-menu */
-  /* ------------------ */
-  /* 以下、ハンバーガーボタン */
+  /* バーガーメニュー */
   .gnav-item {
     display: none;
   }
+  /* ボタン */
   .burger-btn {
-    background-color: #3B4552;
+    background-color: #3b4552;
     display: block;
     width: 116px;
     height: 92px;
     position: absolute;
+    top: 0;
     right: 24px;
-    z-index: 3;
-    border: none;
   }
   .fa-bars {
     color: #fff;
     font-size: 40px;
+  }
+  /* 開くメニュー */
+  .drawer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #3b4552;
+    z-index: 9999;
+    /* transform: translateY(-92px);
+    transition: transform 0.3s ease-out; */
+  }
+  /* .drawer.on {
+    transform: translateY(92px);
+  } */
+  .burger-nav-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 40px 0 32px 20px;
+  }
+  .burger-nav ul {
+    display: flex;
+    padding-left: 40px;
+    column-gap: 30%;
+  }
+  .burger-nav-item a,
+  i {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .burger-nav-item a:hover {
+    text-decoration: underline;
   }
   /* トップ画面 */
   .site-title {
@@ -592,6 +607,15 @@ textarea {
 }
 /* SP */
 @media screen and (max-width: 599px) {
+  /* メニュー */
+  .drawer {
+    height: 220px;
+  }
+  .burger-nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
   /* 記事 */
   .entries {
     display: flex;
@@ -634,7 +658,8 @@ textarea {
     border-top: none;
   }
   /* お問合せ */
-  input , textarea {
+  input,
+  textarea {
     width: 96%;
   }
   /* フッター */
