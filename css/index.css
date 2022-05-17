@@ -11,6 +11,7 @@ body {
   position: relative;
   height: 92px;
   background-color: #48b39d;
+  z-index: 2;
 }
 .title {
   height: 92px;
@@ -82,6 +83,7 @@ body {
   margin: 50px 0;
 }
 .entries {
+  width: calc(100% - 24px);
   max-width: 1500px;
   margin: 0 auto;
   display: flex;
@@ -483,15 +485,15 @@ textarea {
   }
   /* 開くメニュー */
   .drawer {
-    /* display: block; */
+    display: block;
     position: absolute;
     top: 0;
     width: 100%;
     height: 200px;
     background-color: #3b4552;
-    z-index: 9999;
-    /* transform: translateY(-92px); */
+    transform: translateY(-110px);
     transition: transform 0.3s ease-out;
+    z-index: 1;
   }
   .drawer.on {
     transform: translateY(92px);
@@ -635,6 +637,10 @@ textarea {
   /* メニュー */
   .drawer {
     height: 220px;
+    transform: translateY(-110px);
+  }
+  .drawer.on {
+    transform: translateY(120px);
   }
   .burger-nav ul {
     display: flex;
@@ -645,7 +651,6 @@ textarea {
   .entries {
     display: flex;
     flex-direction: column;
-    margin: 0 12px;
   }
   .entry-item {
     width: 100%;

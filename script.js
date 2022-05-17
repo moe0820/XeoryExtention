@@ -10,9 +10,9 @@ window.addEventListener("scroll", function () {
   }
 });
 // ドロワー
-const menu = document.querySelector(".menu");
+const btn = document.querySelector(".burger-btn");
 const drawer = document.querySelector(".drawer");
 
-menu.addEventListener("click", () => {
+btn.addEventListener("click", () => {
   drawer.classList.toggle("on");
 });
